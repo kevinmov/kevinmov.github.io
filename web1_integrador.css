@@ -1,0 +1,52 @@
+/*estilo para el header que solo incluye el titulo*/
+header {
+    color: rgb(210, 228, 230);
+    font-size: 40px;
+    text-align: center;
+    background-image: url(retroimg2.png);
+    text-shadow: 
+        4px -3px 0 #000000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    margin-bottom: -55px;
+    margin-top: -50px;
+}
+
+/*aplicamos un color de fondo,para que ir haciendo pruebas*/
+body {
+    background-color: rgba(63, 120, 206, 0.363);
+}
+
+/*estilo para todo el contenedor de la barra de navegacion*/
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000ee;
+    font-size: 20px;
+    border-top: 10px;
+}
+
+/*estilo para los textos relativos a "A"*/
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: -15px;
+}
+
+/*para mejorar el menu desplegable*/
+.menuDesplegable {
+    display: none;
+    position: absolute;
+    background-color: #000000;/*color de fondo del menu desplegable,sin mouse encima*/
+    min-width: 80px;
+    z-index: 0;
+    font-size: 17px;
+}
+
+/*para desplegar el menu y que muestre las opciones*/
+.cajaMenuDesp:hover .menuDesplegable {
+    display: block;
+}
