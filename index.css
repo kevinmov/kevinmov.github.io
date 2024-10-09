@@ -18,8 +18,8 @@ body {
     background-image: url(img_integrador/50s-Wallpaper-retro2.jpg);
 }
 
-/*estilo de los párrafos*/
-p{
+/*estilo de los párrafos,SE ASIGNA COLOCANDO UN NUMERAL A LOS ID*/
+#intro{
     background-color: rgba(0, 0, 0, 0.514);
     color: rgba(255, 255, 255, 0.856);
     font-size: 20px;
@@ -35,6 +35,8 @@ p{
 .textTitulosBody {
 color: rgba(255, 255, 255, 0.938);
 background-color: #00000044;
+display: inline-block;
+padding: 10px;
 }
 
 /*estilo para todo el contenedor de la barra de navegacion*/
@@ -68,4 +70,13 @@ nav a {
 /*para desplegar el menu y que muestre las opciones*/
 .cajaMenuDesp:hover .menuDesplegable {
     display: block;
+}
+
+/*para aplicar el style sobre el parrafo de cada img*/
+.backgroundParrafoImg {
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
 }
