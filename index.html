@@ -12,53 +12,56 @@
 <body>
     <!--creamos un header para mas comodidad ala hora de aplicar el estilo-->
     <header>
-        <h1>UN LLAMADO AL PASADO</h1>
+        <h1 class="tituloIntro">UN LLAMADO AL PASADO</h1>
     </header>
 
-    <!--creamos el nav referente ala barra de navegacion-->
-    <!--la idea es que el menu tenga un desplegable-->
-    <nav>
-        <a href="navegacion">ir al presente</a>
-        <div class="cajaMenuDesp">
+    <nav id="navbar">
+        <a href="https://www.google.com">Ir a Principal</a>
+        <div class="barraNavegacion">
             <a href="menuDesplegable" aria-haspopup="true" aria-expanded="false">MENU</a>
             <div class="menuDesplegable" aria-hidden="true">
                 <a href="hh">opción 1</a>
                 <a href="hh">opción 2</a>
-                <a href="hh">opcion 3</a>
+                <a href="hh">opción 3</a>
             </div>
         </div>
-        <a href="navegacion">ir al futuro</a>
+        <a href="https://www.google.com">Ir a Contacto</a>
     </nav>
 
     <!--texto de introducción a la página-->
-    <p id="intro">
-        Observando los primeros modelos del teléfono ,podemos deducir que el propósito para el que fue creado era el de
-        conectar 2 puntos del espacio mediante un aparato atravéz del cual se pudiera escuchar y hablar
-        Mediante fue creciendo en popularidad y por el impacto que tuvo en la nueva posibilidad de comunicación a larga
-        distancia,se fue transformando y evolucionando hasta llegar al hogar de las personas (proceso que llevó muchos
-        años enrealidad)
-        Hay muchos modelos íconos que quedaron en la memoria del usuario y hay otros no tan populares pero si muy
-        curiosos ,a los que haremos la honorable mención también
+    <p id="parrafoIntro">
+        El teléfono móvil hace tiempo que dejo de ser aquel aparato con el cual se buscaba comunicar a 2 o mas personas
+        a distancia,hoy en dia nos ha acostumbrado tambien (a algunos mas que a otros) a tener a mano el facil acceso a
+        sus diferentes posibilidades de uso,desde lo mas básico como hacer una llamada o mandar un msj hasta por ejemplo
+        usarlo para trabajar mediante el aparato inteligente. En este apartado histórico veremos un poco de los modelos
+        que fueron apareciendo desde el 1ero para consumo industrial, hasta el 1er smartphone que hizo que el mercado de
+        los botones quedara obsoleto y casi olvidado,ya que en la actualidad siguen circulando y apareciendo nuevos
+        modelos ,pero con un paso desapercibido ya que los consumidores de este tipo de teléfonos son una minoria. <br>
+        Hay muchos modelos íconos que quedaron para siempre en la memoria del usuario que hoy son recordados como
+        verdaderos clásicos y hay otros no tan populares pero si muy curiosos ,a los que haremos una honorable mención
+        también.
     </p>
     <br>
     <br>
 
-    <h2 class="textTitulosBody">Primeros modelos</h2>
 
-    <div class="contImgText">
-        <div class="imgIzquierda">
-            <!--1er imagen ubicada a la izquierda-->
-            <img class="img1" src="img_integrador/1prototipotelefono.jpg">
-        </div>
+    <div class="contenedorImgText">
         <div>
-            <!--parrafo de la 1era img,ubicacion derecha-->
-            <p class="textImgDerecha">
-                Las primeras ideas de telefonia nos presentaron modelos similares a este,que eran fijos y funcionaban
-                transformando impulsos eléctricos en ondas sonoras y viceversa.
+            <img class="img1" src="img_integrador/1prototipotelefono.jpg" alt="Primeros modelos de teléfono">
+        </div>
+    
+        <div class="textImgDerecha">
+            <h2 class="titulosDER">Primeros modelos</h2>
+            <p class="fondoParrafos">
+                Las primeras ideas de telefonía nos presentaron modelos similares al que se observa en la imagen, en sus
+                inicios la idea nos presentaba estos aparatos de uso fijo y funcionaba transformando impulsos eléctricos
+                en ondas sonoras y viceversa.
             </p>
-
         </div>
     </div>
+
+
+    <script src="copia.js"></script>
 </body>
 
 </html>

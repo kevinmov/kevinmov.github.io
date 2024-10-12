@@ -1,54 +1,60 @@
-/*estilo del parrafo de presentacion*/
-#intro{
-    background-color: rgba(0, 0, 0, 0.514);
-    color: rgba(255, 255, 255, 0.856);
-    font-size: 20px;
-}
-
-
-
-
 /************************************************** ESPACIO MENU **************************************************/
-
-/* para mejorar el menu desplegable */
 .menuDesplegable {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     background-color: #000000;
     min-width: 80px;
     z-index: 0;
     font-size: 17px;
-    opacity: 0; /* Añadido */
-    transition: opacity 0.3s ease; /* Añadido */
+    transition: opacity 0.3s ease visibility 0.3s ease;
+    border: 0px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*para desplegar el menu y que muestre las opciones*/
-.cajaMenuDesp:hover .menuDesplegable {
-    display: block;
+/*para que al pasar el mouse se despliegue el menu y muestre las opciones*/
+.barraNavegacion:hover .menuDesplegable {
+    visibility: visible;
     opacity: 1;
+    animation: slideDown 0.3s ease forwards;
 }
 
+/*estilo para los elementos del menú desplegable*/
+.menuDesplegable a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 22px;
+    
+}
 
+.menuDesplegable a:hover {
+    background-color: rgba(7, 187, 187, 0.582);
+}
 
 /************************************************* BARRA DE NAVEGACION **************************************************/
-/*estilo para todo el contenedor de la barra de navegacion*/
 nav {
     display: flex;
     justify-content: center;
-    background-color: #000000ee;
+    background-color: rgba(0, 0, 0, 0.8);
     font-size: 20px;
-    border-top: 10px;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
 }
 
-/*estilo para los textos relativos a "A"*/
 nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
     margin-top: -15px;
+    transition: background-color 0.3s ease;
 }
 
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
 /****************************************************** HEADER *******************************************************/
 header {
@@ -56,7 +62,7 @@ header {
     font-size: 40px;
     text-align: center;
     background-image: url(img_integrador/img\ cortada2.jpg);
-    text-shadow: 
+    text-shadow:
         4px -3px 0 #000000,
         1px -1px 0 #000,
         -1px 1px 0 #000,
@@ -69,46 +75,47 @@ header {
 /************************************************************ BODY ************************************************************/
 body {
     background-image: url(img_integrador/50s-Wallpaper-retro2.jpg);
+    background-attachment: fixed;
 }
 
-
-/*estilo del parrafo de presentacion*/
-#intro{
+#parrafoIntro {
     background-color: rgba(0, 0, 0, 0.514);
     color: rgba(255, 255, 255, 0.856);
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 
-
-/***************************************************** IMG izquierda + TEXTO derecha ******************************************************/
-/*para aplicar el style sobre el parrafo de cada img*/
-.textImgDerecha {
-    background-color: rgba(0, 0, 0, 0.514);
-    color: rgba(255, 255, 255, 0.856);
-    font-size: 20px;
-    padding: 10px;
-    display: flex;
-}
-
-/* Contenedor para imagen y texto */
-.contImgText {
+/********************************************** CONTENEDOR DE IMAGEN,TITULO Y PARRAFO ***********************************************/
+.contenedorImgText {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-/*para darle una ubicacion ala img cargada*/
+.textImgDerecha { /*CONTIENE TAMBIEN EL TITULO DE LA IMG*/
+    display: inline-block;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
 .img1 {
     display: block;
     margin: 0;
 }
 
-/*color de texto de los titulos que acomáñan cada img*/
-.textTitulosBody {
+
+.titulosDER {
     color: rgba(255, 255, 255, 0.938);
-    background-color: #00000044;
-    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
     padding: 10px;
-    }
-    
+    margin: 0;
+    display: inline-block;
+    border-radius: 30%;
+}
+
+.fondoParrafos {
+    background-color: rgba(0, 0, 0, 0.514);
+}
