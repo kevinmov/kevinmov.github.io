@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presente</title>
+    <title>SmartZone - Tu tienda de celulares</title>
+    <link rel="stylesheet" href="a.css">
+    <style>
+        .producto-list {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>SmartZone</h1>
-    
+    <header>
+        <h1>SmartZone</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carrousel">
+            <button id="prev">←</button>
+            <div id="carrousel-container">
+                <img class="carrousel-img" src="images/blu1_2_7_1.jpg" alt="iPhone 14 Blue">
+                <img class="carrousel-img" src="images/iphone-14-pro-512gb-gold-apple.jpg" alt="iPhone 14 Pro Max Gold">
+                <img class="carrousel-img" src="images/Iphon 13 mini.jpeg" alt="iPhone 13 Mini">
+                <img class="carrousel-img" src="images/iPhone_13_Pink_PDP_Image_position-1A__CLCO_v1.jpg" alt="iPhone 13 Pink">
+                <img class="carrousel-img" src="images/Iphone 12 Pro Max Grey.jpg" alt="iPhone 12 Pro Max">
+                <img class="carrousel-img" src="images/Iphone 12 mini.jpg" alt="iPhone 12 Mini">
+                <img class="carrousel-img" src="images/A04e.jpg" alt="Samsung Galaxy A04e">
+                <img class="carrousel-img" src="images/Edge 50 ultra.jpg" alt="Motorola Edge 50 Ultra">
+                <img class="carrousel-img" src="images/TCL50 PRO.png" alt="TCL 50 PRO">
+                <img class="carrousel-img" src="images/a15.jpg" alt="Samsung Galaxy A15">
+                <img class="carrousel-img" src="images/s23 ultra.jpeg" alt="Samsung S23 Ultra">
+                <img class="carrousel-img" src="images/edge 40.jpeg" alt="Motorola Edge 40">
+            </div>
+            <button id="next">→</button>
+        </section>
+
+        <section id="home">
+            <h2>Bienvenido a SmartZone</h2>
+            <p>Descubre los mejores celulares del mercado al mejor precio.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto-list" id="iphone">
+                <h3>iPhones Disponibles</h3>
+                <div class="producto">
+                    <img src="Images/blu1_2_7_1.jpg" alt="iPhone 14 Blue">
+                    <h4>iPhone 14 Blue</h4>
+                    <p>Precio: $1.200.000</p>
+                    <p>Descripción: Último modelo de iPhone con características impresionantes.</p>
+                </div>
+                <div class="producto">
+                    <img src="Images/iphone-card-40-iphone15hero-202309_FMT_WHH.jpeg" alt="iPhone 15 Pink">
+                    <h4>iPhone 15</h4>
+                    <p>Precio: $999.000</p>
+                    <p>Descripción: Rendimiento excelente y gran duración de batería.</p>
+                </div>
+            </div>
+            <div class="producto">
+                <h4>iPhone 12 Pro Max Grey</h4>
+                <img src="Images/Iphone 12 Pro Max Grey.jpg" alt="iPhone 12 Pro Max Grey">
+                <p>Precio: $850.000</p>
+                <p>Descripción: Funcionamiento acorde a tus tareas</p>
+            </div>
+            <div class="producto">
+                <h4>iPhone 12 Pro Max</h4>
+                <img src="Images/" alt="iPhone 12">
+                <p>Precio: $850.000</p>
+                <p>Descripción: Funcionamiento acorde a tus tareas</p>
+            </div>
+            <div class="producto">
+                <h4>iPhone 12 Pro Max</h4>
+                <img src="Images/iphone13.jpg" alt="iPhone 13">
+                <p>Precio: $850.000</p>
+                <p>Descripción: Funcionamiento acorde a tus tareas</p>
+            </div>
+
+            <div class="producto-list" id="samsung">
+                <h3>Samsung Disponibles</h3>
+                <div class="producto">
+                    <img src="images/samsung1.jpg" alt="Samsung Galaxy S23">
+                    <h4>Samsung Galaxy S23</h4>
+                    <p>Precio: $899.000</p>
+                    <p>Descripción: Pantalla AMOLED y cámara de alta calidad.</p>
+                </div>
+                <div class="producto">
+                    <img src="images/samsungA52.jpg" alt="Samsung Galaxy A52">
+                    <h4>Samsung Galaxy A52</h4>
+                    <p>Precio: $399.000</p>
+                    <p>Descripción: Un gran dispositivo a un precio accesible.</p>
+                </div>
+            </div>
+
+            <div class="producto-list" id="motorola">
+                <h3>Motorola Disponibles</h3>
+                <div class="producto">
+                    <img src="images/motorola1.jpg" alt="Motorola Edge 40">
+                    <h4>Motorola Edge 40</h4>
+                    <p>Precio: $499.000</p>
+                    <p>Descripción: Rendimiento y diseño premium.</p>
+                </div>
+            </div>
+
+            <div class="producto-list" id="TCL">
+                <h3>TCL Disponibles</h3>
+                <div class="producto">
+                    <img src="images/tcl1.jpg" alt="TCL 30 Pro">
+                    <h4>TCL 30 Pro</h4>
+                    <p>Precio: $349.560</p>
+                    <p>Descripción: Gran calidad de pantalla y buen rendimiento.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 </html>
