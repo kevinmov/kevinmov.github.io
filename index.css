@@ -85,8 +85,7 @@ body {
     margin-bottom: 20px;
 }
 
-
-/********************************************** CONTENEDOR DE IMAGEN,TITULO Y PARRAFO ***********************************************/
+/********************************************** CONTENEDOR DE IMAGEN,TITULO Y PARRAFO(img izq -text derecha) ***********************************************/
 .contenedorImgText {
     display: flex;
     align-items: flex-start;
@@ -117,5 +116,39 @@ body {
 }
 
 .fondoParrafos {
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+
+/********************************** CONTENEDOR DE IMAGEN,TITULO Y PARRAFO(img DERECHA - text IZUIERDA) ***********************************************/
+.contenedorImgText2 {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-bottom: 20px;
+}
+
+.textImgDerecha2 {
+    display: inline-block;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 20px;
+    margin-right: 20px; /* Cambié de margin-left a margin-right */
+}
+
+.img {
+    display: block;
+    margin: 0; /* Asegúrate de que la imagen no tenga margen */
+}
+
+.titulosIZQ {
+    color: rgba(255, 255, 255, 0.938);
     background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 30%;
+}
+
+.fondoParrafosIZQ {
+    background-color: rgba(0, 0, 0, 0.616);
 }
