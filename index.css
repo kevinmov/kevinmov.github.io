@@ -152,3 +152,12 @@ body {
 .fondoParrafosIZQ {
     background-color: rgba(0, 0, 0, 0.616);
 }
+
+.fondoParrafos2 {
+    background-color: rgba(0, 0, 0, 0.616);
+    display: block;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 20px;
+    margin-right: 20px;
+}
