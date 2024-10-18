@@ -168,15 +168,22 @@ body {
 .table1IMG {
     display: flex;
     justify-content: space-between;
-    border: 14px solid #7a270650;
+    width: 100%;
+    color: aliceblue;
 }
-.columna {
-    width: 45%;
 
+.columna {
+    flex: 1;
+    margin: 0 10px;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+.cadaIMG {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
+}
+
+.cadaIMG img {
+    border: 2px solid #000;
+    margin-right: 10px;
 }
