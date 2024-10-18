@@ -162,3 +162,21 @@ body {
     font-size: 20px;
     margin-right: 20px;
 }
+
+
+/********************************** PARA EL TABLE DE IMAGENES ***********************************************/
+.table1IMG {
+    display: flex;
+    justify-content: space-between;
+    border: 14px solid #7a270650;
+}
+.columna {
+    width: 45%;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
