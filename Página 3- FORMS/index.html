@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-
-    <link rel="stylesheet" href="index.css">
+    <title>Formulario con Sombra</title>
+    <link rel="stylesheet" href="index.css"> <!-- Enlace al CSS -->
 </head>
-<body>
-    
+
 <body>
     <div class="cajaCont">
-        <form id="myFormulario">
-            <label for="nombre">Nombre de usuario</label><br>
-            <input type="text" name="nombre" id="nombre">
-            <br>
-    
-            <label for="peli">Título de la película</label><br>
-            <input type="text" name="peli" id="peli" maxlength="200" >
-            <br>
-    
-            <label for="punto">Puntuación</label><br>
-            <input type="number" name="punto" id="punto" min="1" >
-            <br>
-    
-            <label for="Email">Email</label><br>
-            <input type="email" name="Email" id="Email">
-            <br>
-            <br>
-            <button type="submit">Guardar reseña</button>
+        <form>
+            <div class="textoForm">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum molestiae
+                    voluptatibus rem incidunt, sapiente quam maiores inventore ratione ad aspernatur ex recusandae,
+                    adipisci ab ducimus accusamus hic voluptates mollitia dolorum?
+                    Eos, corporis quasi deleniti odio mollitia reiciendis dolorem dolore rerum placeat amet accusamus
+                    unde vero. Natus, in aliquid voluptas, suscipit delectus aspernatur distinctio corporis labore
+                    voluptate nemo consectetur quas est.
+                    Blanditiis, amet? Debitis reprehenderit, ad a dolore cupiditate alias qui quasi quidem repellat ea
+                    pariatur soluta est eveniet error dolores reiciendis blanditiis nisi beatae inventore</p>
+            </div>
+
+            <div class="cajaLabelInputs">
+                <div class="cajaxcaja">
+                    <label class="labelclass" for="nombre">Nombre de usuario</label><br>
+                    <input class="inputclass" type="text" name="nombre" id="nombre"><br>
+                </div>
+
+                <div class="cajaxcaja">
+                    <label class="labelclass" for="peli">Título de la película</label><br>
+                    <input class="inputclass" type="text" name="peli" id="peli" maxlength="200"><br>
+                </div>
+
+                <div class="cajaxcaja">
+                    <label class="labelclass" for="punto">Puntuación</label><br>
+                    <input class="inputclass" type="number" name="punto" id="punto" min="1"><br>
+                </div>
+
+                <div class="cajaxcaja">
+                    <label class="labelclass" for="Email">Email</label><br>
+                    <input class="inputclass" type="email" name="Email" id="Email"><br><br>
+                </div>
+
+                <div class="botoncito">
+                    <button type="submit">Guardar reseña</button>
+                </div>
+
+            </div>
         </form>
     </div>
 
     <!-- lista para mostrar errores -->
     <ul class="error" id="errorList"></ul>
-    <!--para mostrar msj en caso de envios exitosos-->
+    <!-- para mostrar mensaje en caso de envíos exitosos -->
     <div class="mensajeList" id="mensajeList"></div>
 
     <script src="index.js"></script>
 </body>
-</body>
+
 </html>
