@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<body>
+    <div class="cajaCont">
+        <form id="myFormulario">
+            <label for="nombre">Nombre de usuario</label><br>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+    
+            <label for="peli">Título de la película</label><br>
+            <input type="text" name="peli" id="peli" maxlength="200" >
+            <br>
+    
+            <label for="punto">Puntuación</label><br>
+            <input type="number" name="punto" id="punto" min="1" >
+            <br>
+    
+            <label for="Email">Email</label><br>
+            <input type="email" name="Email" id="Email">
+            <br>
+            <br>
+            <button type="submit">Guardar reseña</button>
+        </form>
+    </div>
+
+    <!-- lista para mostrar errores -->
+    <ul class="error" id="errorList"></ul>
+    <!--para mostrar msj en caso de envios exitosos-->
+    <div class="mensajeList" id="mensajeList"></div>
+
+    <script src="index.js"></script>
+</body>
+</body>
+</html>

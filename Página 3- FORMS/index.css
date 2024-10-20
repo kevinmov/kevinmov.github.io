@@ -1,0 +1,71 @@
+/*estilo para el body general*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*estilo para la caja contenedora*/
+.cajaCont {
+    color: rgb(0, 131, 109);
+    background-color: rgb(172, 214, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    padding: 20px;
+    border-radius: 25px;
+    width: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+/*estilo para label*/
+label {
+    font-weight: 800;
+}
+
+/*estilo para los input*/
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    font-weight: 800;
+}
+
+/*estilo para el boton*/
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 65px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    width: 100%;
+}
+
+/*reacciones con el mouse*/
+button:hover {
+    background-color: #000000;
+}
+
+/*para los msjs de error*/
+.error {
+    color: rgb(255, 123, 0);
+    font-size: 18px;
+    background-color: rgb(56, 85, 90);
+}
+
+.mensajeList {
+    color: rgb(255, 123, 0);
+    font-size: 18px;
+    background-color: rgb(56, 85, 90);
+}
