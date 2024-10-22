@@ -1,72 +1,165 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    color: #E0E0E0;
+}
+
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #1E1E1E;
+    color: #FFAB40;
+    padding: 30px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 nav {
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;        
+    margin-top: 15px;
 }
 
 nav ul li a {
-    color: white;          
-    text-decoration: none; 
-    font-weight: bold;     
-    transition: color 0.3s; 
+    color: #FFAB40;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;        
+    color: #FFC107;
 }
 
 #home {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-color: #121212; /* Color igual al del body */
+    color: #E0E0E0; /* Color de texto */
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
     position: relative;
 }
 
+
+
 .home-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 10px;
+    background-color: rgba(25, 25, 25, 0.8);
+    padding: 50px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: #FFAB40;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+#home p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    color: black;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background-color: #FFAB40;
+    color: #121212;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover {
-    background-color: #e6b800;
+    background-color: #FFC107;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+#productos {
+    padding: 30px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+#productos h2 {
+    color: #FFAB40;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.producto-list {
+    margin-bottom: 50px;
+    background-color: #2A2A2A;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.producto-list h3 {
+    font-size: 2rem;
+    color: #FF5733;
+    margin-bottom: 15px;
+}
+
+.producto {
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1E1E1E;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.producto h4 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #E0E0E0;
+}
+
+.producto p {
+    font-size: 0.95rem;
+    color: #B0BEC5;
+    margin: 5px 0;
+}
+
+#iphone, #samsung, #motorola, #TCL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #iphone, #samsung, #motorola, #TCL {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+    }
+}
 
 #carrousel {
     display: flex;
@@ -91,11 +184,11 @@ nav ul li a:hover {
 }
 
 #prev, #next {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(255, 171, 64, 0.8);
+    color: #121212;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 12px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -103,9 +196,10 @@ nav ul li a:hover {
 }
 
 #prev {
-    left: 10px;
+    left: 15px;
 }
 
 #next {
-    right: 10px;
+    right: 15px;
 }
+
