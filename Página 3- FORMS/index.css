@@ -1,7 +1,9 @@
 body {
     background-color: rgba(15, 123, 224, 0.452);
     font-family: cursive;
-    background-image: url(../img_integrador/fondo\ total1.jpg);
+    background-image: url(../img_integrador/fondo\ total7.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 .textoForm {
     background-color: rgba(0, 0, 0, 0.514);

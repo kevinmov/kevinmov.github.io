@@ -10,8 +10,8 @@ formValidacion.addEventListener('submit', function (event) {
 
     // obtener los valores de los inputs
     const nombre = document.getElementById('nombre').value.trim();
-    const peli = document.getElementById('peli').value.trim();
-    const punto = document.getElementById('punto').value;
+    const apellido = document.getElementById('apellido').value.trim();
+    const equipo = document.getElementById('equipo').value;
     const email = document.getElementById('Email').value.trim();
 
     // validación
@@ -26,22 +26,17 @@ formValidacion.addEventListener('submit', function (event) {
     }
 
     // validar título de la película
-    if (!peli) {
+    if (!apellido) {
         const li = document.createElement('li');
-        li.textContent = 'Por favor, ingresa el título de la película.';
-        errorList.appendChild(li);
-        valid = false;
-    } else if (peli.length > 200) {
-        const li = document.createElement('li');
-        li.textContent = 'El título de la película no puede exceder los 200 caracteres.';
+        li.textContent = 'es necesario ingresar el dato';
         errorList.appendChild(li);
         valid = false;
     }
 
     // validar puntuación
-    if (!punto || punto < 1 || punto > 10) {
+    if (!equipo = "") {
         const li = document.createElement('li');
-        li.textContent = 'La puntuación debe estar entre 1 y 10.';
+        li.textContent = 'ingrese el nombre del equipo que desea comprar';
         errorList.appendChild(li);
         valid = false;
     }
@@ -60,10 +55,7 @@ formValidacion.addEventListener('submit', function (event) {
         // para crear el mensaje
         let mensaje;
         if (email) {
-            mensaje = `${nombre} dice que ${peli} tiene una puntuación de ${punto}. Contacto: ${email}`;
-        } else {
-            mensaje = `${nombre} dice que ${peli} tiene una puntuación de ${punto}.`;
-        }
+            mensaje = `Felicidades ${nombre}  ${apellido} elegiste el equipo : ${equipo}. Contacto: ${email}`;
 
         // agregamos el mensaje a la lista
         const mensajeParaLista = document.createElement('div');
