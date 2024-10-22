@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 .textoForm {
     background-color: rgba(0, 0, 0, 0.514);
     text-align: justify;
@@ -26,7 +27,6 @@ body {
     width: 50%;
     border-radius: 5px;
     box-shadow: 60px 54px 15px rgba(0, 0, 0, 0.637);
-    
 }
 
 .cajaLabelInputs {
@@ -85,4 +85,14 @@ button:hover {
 .botoncito {
     align-items: center;
     justify-content: center;
+}
+
+.error {
+    color: yellow;
+    font-size: 30px;
+}
+
+.mensaje-exito {
+    color: green;
+    font-size: 30px;
 }

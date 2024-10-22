@@ -10,11 +10,11 @@
 
 <body>
     <div class="cajaCont">
-        <form>
+        <form id="myFormulario">
             <div class="textoForm">
                 <p> CONTRATO Usuario-Empresa: <br>
-                1-como empresa nos comprometemos con el cliente a hacer entrega del producto en sus óptimas condiciones y en caso de que no fuera asi como lo planteamos "or eventos derivados de nuestros servicios de entrega "por ejemplo",nos daremos (con gusto)ala tarea de otorgarle la reposicion del equipo a nuestro cliente. <br>
-                2-ofrecemos un servicio de garantia total en los primeros 2 años,por motivos de falla del dispositivo. Y un servicio técnico de primer nivel con un descuento del 40% por daños propios del uso del usuario,extendido tambien por 2 años.
+                    1-como empresa nos comprometemos con el cliente a hacer entrega del producto en sus óptimas condiciones y en caso de que no fuera así como lo planteamos "o eventos derivados de nuestros servicios de entrega", por ejemplo, nos daremos (con gusto) a la tarea de otorgarle la reposición del equipo a nuestro cliente. <br>
+                    2-ofrecemos un servicio de garantía total en los primeros 2 años, por motivos de falla del dispositivo. Y un servicio técnico de primer nivel con un descuento del 40% por daños propios del uso del usuario, extendido también por 2 años.
                 </p>
             </div>
 
@@ -25,32 +25,29 @@
                 </div>
 
                 <div class="cajaxcaja">
-                    <label class="labelclass" for="peli">Apellido</label><br>
-                    <input class="inputclass" type="text" name="Apellido" id="Apellido"><br>
+                    <label class="labelclass" for="apellido">Apellido</label><br>
+                    <input class="inputclass" type="text" name="apellido" id="apellido"><br>
                 </div>
 
                 <div class="cajaxcaja">
-                    <label class="labelclass" for="equipo">¿Que equipo desea comprar?</label><br>
+                    <label class="labelclass" for="equipo">¿Qué equipo desea comprar?</label><br>
                     <input class="inputclass" type="text" name="equipo" id="equipo"><br>
                 </div>
 
                 <div class="cajaxcaja">
-                    <label class="labelclass" for="Email">Email</label><br>
-                    <input class="inputclass" type="email" name="Email" id="Email"><br><br>
+                    <label class="labelclass" for="email">Email</label><br>
+                    <input class="inputclass" type="email" name="email" id="email"><br><br>
                 </div>
 
                 <div class="botoncito">
                     <button type="submit">COMPRAR</button>
                 </div>
-
             </div>
         </form>
     </div>
-
-    <!-- lista para mostrar errores -->
-    <ul class="error" id="errorList"></ul>
-    <!-- para mostrar mensaje en caso de envíos exitosos -->
-    <div class="mensajeList" id="mensajeList"></div>
+    
+    <!-- para mostrar mensaje de error o éxito -->
+    <div class="mensaje" id="mensaje"></div>
 
     <script src="index.js"></script>
 </body>

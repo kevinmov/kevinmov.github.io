@@ -1,69 +1,72 @@
-const formValidacion = document.getElementById('myFormulario');
-const mensajeList = document.getElementById('mensajeList');
+document.addEventListener('DOMContentLoaded', function () {
+    const formValidacion = document.getElementById('myFormulario');
+    const mensaje = document.getElementById('mensaje');
 
-formValidacion.addEventListener('submit', function (event) {
-    event.preventDefault();
+    formValidacion.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    // limpiar mensajes de error previos
-    const errorList = document.getElementById('errorList');
-    errorList.innerHTML = '';
+        mensaje.textContent = ''; // limpiar mensajes
 
-    // obtener los valores de los inputs
-    const nombre = document.getElementById('nombre').value.trim();
-    const apellido = document.getElementById('apellido').value.trim();
-    const equipo = document.getElementById('equipo').value;
-    const email = document.getElementById('Email').value.trim();
+        const nombre = document.getElementById('nombre').value.trim();
+        const apellido = document.getElementById('apellido').value.trim();
+        const equipo = document.getElementById('equipo').value.trim();
+        const email = document.getElementById('email').value.trim();
 
-    // validación
-    let valid = true;
+        let valid = true;
 
-    // validar nombre
-    if (!nombre) {
-        const li = document.createElement('li');
-        li.textContent = 'Por favor, ingresa tu nombre.';
-        errorList.appendChild(li);
-        valid = false;
-    }
+        // Expresión regular para validar solo letras y espacios
+        const nombrePattern = /^[A-Za-zÀ-ÿ\s]+$/;
+        const apellidoPattern = /^[A-Za-zÀ-ÿ\s]+$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // validar título de la película
-    if (!apellido) {
-        const li = document.createElement('li');
-        li.textContent = 'es necesario ingresar el dato';
-        errorList.appendChild(li);
-        valid = false;
-    }
+        // Validación del nombre
+        if (!nombre) {
+            mensaje.textContent = 'Por favor, ingrese correctamente el nombre';
+            mensaje.classList.add('error');
+            valid = false;
+        } else if (!nombrePattern.test(nombre)) {
+            mensaje.textContent = 'El nombre solo puede contener letras y espacios.';
+            mensaje.classList.add('error');
+            valid = false;
+        }
 
-    // validar puntuación
-    if (!equipo = "") {
-        const li = document.createElement('li');
-        li.textContent = 'ingrese el nombre del equipo que desea comprar';
-        errorList.appendChild(li);
-        valid = false;
-    }
+        // Validación del apellido
+        if (!apellido) {
+            mensaje.textContent = 'Por favor, ingresa correctamente el apellido';
+            mensaje.classList.add('error');
+            valid = false;
+        } else if (!apellidoPattern.test(apellido)) {
+            mensaje.textContent = 'El apellido solo puede contener letras y espacios.';
+            mensaje.classList.add('error');
+            valid = false;
+        }
 
-    // validar email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email && !emailPattern.test(email)) {
-        const li = document.createElement('li');
-        li.textContent = 'Por favor, ingresa un email válido.';
-        errorList.appendChild(li);
-        valid = false;
-    }
+        // Validación del equipo
+        if (!equipo) {
+            mensaje.textContent = 'Ingresa el nombre del equipo que desea comprar.';
+            mensaje.classList.add('error');
+            valid = false;
+        }
 
-    // si todas las validaciones son correctas...
-    if (valid) {
-        // para crear el mensaje
-        let mensaje;
-        if (email) {
-            mensaje = `Felicidades ${nombre}  ${apellido} elegiste el equipo : ${equipo}. Contacto: ${email}`;
+        // Validación del email
+        if (!email) {
+            mensaje.textContent = 'Por favor, ingresa tu email.';
+            mensaje.classList.add('error');
+            valid = false;
+        } else if (!emailPattern.test(email)) {
+            mensaje.textContent = 'Por favor, ingresa un email válido.';
+            mensaje.classList.add('error');
+            valid = false;
+        }
 
-        // agregamos el mensaje a la lista
-        const mensajeParaLista = document.createElement('div');
-        mensajeParaLista.textContent = mensaje;
-        mensajeList.appendChild(mensajeParaLista);
-
-        // para reiniciar el formulario
-        formValidacion.reset();
-        errorList.innerHTML = ''; // para limpiar la lista de errores
-    }
+        // Si todas las validaciones son correctas...
+        if (valid) {
+            console.log('Validación completa:', valid);
+            let successMessage = `Felicidades ${nombre} ${apellido}, elegiste el equipo: ${equipo}. Gracias por tu compra. Pronto nos pondremos en contacto al email que nos brindaste: ${email}`;
+            mensaje.textContent = successMessage;
+            mensaje.classList.remove('error');
+            mensaje.classList.add('mensaje-exito');
+            formValidacion.reset();
+        }
+    });
 });
