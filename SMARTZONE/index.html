@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,143 +12,156 @@
         }
     </style>
 </head>
+
 <body>
+    <!--AGREGADO DE KEVIN.GITHUB.IO-->
     <header>
         <h1>SmartZone</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <nav id="navbar">
+            <a href="http://127.0.0.1:5501/index.html">Ir a página histórica</a>
+            <div class="barraNavegacion">
+                <a href="menuDesplegable" aria-haspopup="true" aria-expanded="false">MENU</a>
+                <div class="menuDesplegable" aria-hidden="true">
+                    <a href="#carrousel">Carrusel</a>
+                    <a href="#productos">Productos</a>
+                    <!-- <a href="#table1IMG">Tablas</a> -->
+                </div>
+            </div>
+            <a href="http://127.0.0.1:5501/P%C3%A1gina%203-%20FORMS/index.html">Compras/contacto</a>
         </nav>
     </header>
 
-    <main>
-        <section id="carrousel">
-            <button id="prev">←</button>
-            <div id="carrousel-container">
-                <img class="carrousel-img" src="images/blu1_2_7_1.jpg" alt="iPhone 14 Blue">
-                <img class="carrousel-img" src="images/iphone-14-pro-512gb-gold-apple.jpg" alt="iPhone 14 Pro Max Gold">
-                <img class="carrousel-img" src="images/Iphon 13 mini.jpeg" alt="iPhone 13 Mini">
-                <img class="carrousel-img" src="images/iPhone_13_Pink_PDP_Image_position-1A__CLCO_v1.jpg" alt="iPhone 13 Pink">
-                <img class="carrousel-img" src="images/Iphone 12 Pro Max Grey.jpg" alt="iPhone 12 Pro Max">
-                <img class="carrousel-img" src="images/Iphone 12 mini.jpg" alt="iPhone 12 Mini">
-                <img class="carrousel-img" src="images/A04e.jpg" alt="Samsung Galaxy A04e">
-                <img class="carrousel-img" src="images/Edge 50 ultra.jpg" alt="Motorola Edge 50 Ultra">
-                <img class="carrousel-img" src="images/TCL50 PRO.png" alt="TCL 50 PRO">
-                <img class="carrousel-img" src="images/a15.jpg" alt="Samsung Galaxy A15">
-                <img class="carrousel-img" src="images/s23 ultra.jpeg" alt="Samsung S23 Ultra">
-                <img class="carrousel-img" src="images/edge 40.jpeg" alt="Motorola Edge 40">
-            </div>
-            <button id="next">→</button>
-        </section>
+        <main>
+            <section id="carrousel">
+                <button id="prev">←</button>
+                <div id="carrousel-container">
+                    <img class="carrousel-img" src="images/blu1_2_7_1.jpg" alt="iPhone 14 Blue">
+                    <img class="carrousel-img" src="images/iphone-14-pro-512gb-gold-apple.jpg"
+                        alt="iPhone 14 Pro Max Gold">
+                    <img class="carrousel-img" src="images/Iphon 13 mini.jpeg" alt="iPhone 13 Mini">
+                    <img class="carrousel-img" src="images/iPhone_13_Pink_PDP_Image_position-1A__CLCO_v1.jpg"
+                        alt="iPhone 13 Pink">
+                    <img class="carrousel-img" src="images/Iphone 12 Pro Max Grey.jpg" alt="iPhone 12 Pro Max">
+                    <img class="carrousel-img" src="images/Iphone 12 mini.jpg" alt="iPhone 12 Mini">
+                    <img class="carrousel-img" src="images/A04e.jpg" alt="Samsung Galaxy A04e">
+                    <img class="carrousel-img" src="images/Edge 50 ultra.jpg" alt="Motorola Edge 50 Ultra">
+                    <img class="carrousel-img" src="images/TCL50 PRO.png" alt="TCL 50 PRO">
+                    <img class="carrousel-img" src="images/a15.jpg" alt="Samsung Galaxy A15">
+                    <img class="carrousel-img" src="images/s23 ultra.jpeg" alt="Samsung S23 Ultra">
+                    <img class="carrousel-img" src="images/edge 40.jpeg" alt="Motorola Edge 40">
+                </div>
+                <button id="next">→</button>
+            </section>
 
-        <section id="home">
-            <h2>Bienvenido a SmartZone</h2>
-            <p>Descubre los mejores celulares del mercado al mejor precio.</p>
-        </section>
+            <section id="home">
+                <h2>Bienvenido a SmartZone</h2>
+                <p>Descubre los mejores celulares del mercado al mejor precio.</p>
+            </section>
 
-        <section id="productos">
-            <h2>Nuestros Productos</h2>
-            <div class="producto-list" id="iphone">
-                <h3>iPhones Disponibles</h3>
-                <div class="producto">
-                    <img src="Images/blu1_2_7_1.jpg" alt="iPhone 14 Blue">
-                    <h4>iPhone 14 Blue</h4>
-                    <p>Precio: $1.200.000</p>
-                    <p>Descripción: Último modelo de iPhone con características impresionantes.</p>
+            <section id="productos">
+                <h2>Nuestros Productos</h2>
+                <div class="producto-list" id="iphone">
+                    <h3>iPhones Disponibles</h3>
+                    <div class="producto">
+                        <img src="Images/blu1_2_7_1.jpg" alt="iPhone 14 Blue">
+                        <h4>iPhone 14 Blue</h4>
+                        <p>Precio: $1.200.000</p>
+                        <p>Descripción: Último modelo de iPhone con características impresionantes.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Images/iphone-card-40-iphone15hero-202309_FMT_WHH.jpeg" alt="iPhone 15 Pink">
+                        <h4>iPhone 15</h4>
+                        <p>Precio: $999.000</p>
+                        <p>Descripción: Rendimiento excelente y gran duración de batería.</p>
+                    </div>
                 </div>
                 <div class="producto">
-                    <img src="Images/iphone-card-40-iphone15hero-202309_FMT_WHH.jpeg" alt="iPhone 15 Pink">
-                    <h4>iPhone 15</h4>
-                    <p>Precio: $999.000</p>
-                    <p>Descripción: Rendimiento excelente y gran duración de batería.</p>
-                </div>
-            </div>
-            <div class="producto">
-                <h4>iPhone 12 Pro Max Grey</h4>
-                <img src="Images/Iphone 12 Pro Max Grey.jpg" alt="iPhone 12 Pro Max Grey">
-                <p>Precio: $850.000</p>
-                <p>Descripción: Funcionamiento acorde a tus tareas</p>
-            </div>
-            <div class="producto">
-                <h4>iPhone 12 Pro Mini</h4>
-                <img src="Images/Iphone 12 mini.jpg" alt="iPhone 12">
-                <p>Precio: $850.000</p>
-                <p>Descripción: Funcionamiento acorde a tus tareas</p>
-            </div>
-            <div class="producto">
-                <h4>iPhone 12 Pro Max</h4>
-                <img src="Images/iphone 12 pro max.jpeg" alt="iPhone 13">
-                <p>Precio: $850.000</p>
-                <p>Descripción: Funcionamiento acorde a tus tareas</p>
-            </div>
-
-            <div class="producto-list" id="samsung">
-                <h3>Samsung Disponibles</h3>
-                <div class="producto">
-                    <img src="images/s23 ultra.jpeg" alt="Samsung Galaxy S23">
-                    <h4>Samsung Galaxy S23</h4>
-                    <p>Precio: $899.000</p>
-                    <p>Descripción: Pantalla AMOLED y cámara de alta calidad.</p>
+                    <h4>iPhone 12 Pro Max Grey</h4>
+                    <img src="Images/Iphone 12 Pro Max Grey.jpg" alt="iPhone 12 Pro Max Grey">
+                    <p>Precio: $850.000</p>
+                    <p>Descripción: Funcionamiento acorde a tus tareas</p>
                 </div>
                 <div class="producto">
-                    <img src="images/samsung-galaxy-a52-5g.jpg" alt="Samsung Galaxy A52">
-                    <h4>Samsung Galaxy A52</h4>
-                    <p>Precio: $399.000</p>
-                    <p>Descripción: Un gran dispositivo a un precio accesible.</p>
+                    <h4>iPhone 12 Pro Mini</h4>
+                    <img src="Images/Iphone 12 mini.jpg" alt="iPhone 12">
+                    <p>Precio: $850.000</p>
+                    <p>Descripción: Funcionamiento acorde a tus tareas</p>
                 </div>
-            </div>
-            <div class="producto">
-                <img src="images/samsung-a15-0077edb63afdb4413317110423252390-640-0.jpg" alt="Samsung Galaxy A15">
-                <h4>Samsung Galaxy A15</h4>
-                <p>Precio: $256.000</p>
-                <p>Descripción: La pantalla Super AMOLED de 6.5” ofrece una claridad vibrante incluso bajo la luz solar directa con Vision Booster, desplazamiento suave con frecuencia de actualización de 90Hz.</p>
-            </div>
-            <div class="producto">
-                <img src="images/file.png" alt="Samsung Galaxy Galaxy Z Fold 6 AI">
-                <h4>Samsung  Galaxy Z Fold 6 AI</h4>
-                <p>Precio: $4.100.000</p>
-                <p>Descripción: Lleva toda la potencia de un PC en el bolsillo con Galaxy Z Fold6. Más potente que nunca, con una pantalla más delgada y, ahora, con todo el poder de Galaxy AI..</p>
-            </div>
-
-            <div class="producto-list" id="motorola">
-                <h3>Motorola Disponibles</h3>
                 <div class="producto">
-                    <img src="images/167240-800-auto.png" alt="Motorola Edge 50">
-                    <h4>Motorola Edge 50</h4>
-                    <p>Precio: $999.999</p>
-                    <p>Descripción: Cámara Ultra Pixel de 50MP con Sensor Sony – LYTIA™ 700C y zoom óptico de 3x..</p>
+                    <h4>iPhone 12 Pro Max</h4>
+                    <img src="Images/iphone 12 pro max.jpeg" alt="iPhone 13">
+                    <p>Precio: $850.000</p>
+                    <p>Descripción: Funcionamiento acorde a tus tareas</p>
                 </div>
-            </div>
 
-            
+                <div class="producto-list" id="samsung">
+                    <h3>Samsung Disponibles</h3>
+                    <div class="producto">
+                        <img src="images/s23 ultra.jpeg" alt="Samsung Galaxy S23">
+                        <h4>Samsung Galaxy S23</h4>
+                        <p>Precio: $899.000</p>
+                        <p>Descripción: Pantalla AMOLED y cámara de alta calidad.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="images/samsung-galaxy-a52-5g.jpg" alt="Samsung Galaxy A52">
+                        <h4>Samsung Galaxy A52</h4>
+                        <p>Precio: $399.000</p>
+                        <p>Descripción: Un gran dispositivo a un precio accesible.</p>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="images/samsung-a15-0077edb63afdb4413317110423252390-640-0.jpg" alt="Samsung Galaxy A15">
+                    <h4>Samsung Galaxy A15</h4>
+                    <p>Precio: $256.000</p>
+                    <p>Descripción: La pantalla Super AMOLED de 6.5” ofrece una claridad vibrante incluso bajo la luz
+                        solar directa con Vision Booster, desplazamiento suave con frecuencia de actualización de 90Hz.
+                    </p>
+                </div>
+                <div class="producto">
+                    <img src="images/file.png" alt="Samsung Galaxy Galaxy Z Fold 6 AI">
+                    <h4>Samsung Galaxy Z Fold 6 AI</h4>
+                    <p>Precio: $4.100.000</p>
+                    <p>Descripción: Lleva toda la potencia de un PC en el bolsillo con Galaxy Z Fold6. Más potente que
+                        nunca, con una pantalla más delgada y, ahora, con todo el poder de Galaxy AI..</p>
+                </div>
+
+                <div class="producto-list" id="motorola">
+                    <h3>Motorola Disponibles</h3>
+                    <div class="producto">
+                        <img src="images/167240-800-auto.png" alt="Motorola Edge 50">
+                        <h4>Motorola Edge 50</h4>
+                        <p>Precio: $999.999</p>
+                        <p>Descripción: Cámara Ultra Pixel de 50MP con Sensor Sony – LYTIA™ 700C y zoom óptico de 3x..
+                        </p>
+                    </div>
+                </div>
+
+
                 <div class="producto">
                     <img src="images/G58.png" alt="Motorola G85 5G">
                     <h4>Motorola G85 5G</h4>
                     <p>Precio: $699.999</p>
                     <p>Descripción: Pantalla sin bordes de 6.7" y sonido Dolby Atmos®.</p>
                 </div>
-            </div>
+                </div>
 
-           
+
                 <div class="producto">
                     <img src="images/Moto G04s.png" alt="Motorola G04s">
                     <h4>Motorola G04s</h4>
                     <p>Precio: $219.000</p>
                     <p>Descripción: Cámara de 50 MP con IA.</p>
                 </div>
-            </div>
+                </div>
 
-            
+
                 <div class="producto">
                     <img src="images/50 edge.png" alt="Motorola Edge 50 Fusion">
                     <h4>Motorola Edge 50 Fusion</h4>
                     <p>Precio: $799.999</p>
                     <p>Descripción: Diferentes colores y materiales con protección dentro y fuera del agua (IP68).</p>
                 </div>
-            </div>
+                </div>
 
                 <div class="producto">
                     <img src="images/g24.png" alt="Motorola G24">
@@ -155,38 +169,41 @@
                     <p>Precio: $499.000</p>
                     <p>Descripción: Pantalla brillante de 6.6" y 90 Hz con sonido Dolby Atmos®.</p>
                 </div>
-            </div>
-            
+                </div>
 
-            <div class="producto-list" id="TCL">
-                <h3>TCL Disponibles</h3>
+
+                <div class="producto-list" id="TCL">
+                    <h3>TCL Disponibles</h3>
+                    <div class="producto">
+                        <img src="images/405.jpg" alt="TCL 405">
+                        <h4>TCL 30 Pro</h4>
+                        <p>Precio: $349.560</p>
+                        <p>Descripción: Rendimiento, diseño y calidad en un dispositivo.</p>
+                    </div>
+                </div>
+
                 <div class="producto">
-                    <img src="images/405.jpg" alt="TCL 405">
+                    <img src="images/30SE.jpg" alt="TCL 30SE">
                     <h4>TCL 30 Pro</h4>
                     <p>Precio: $349.560</p>
-                    <p>Descripción: Rendimiento, diseño y calidad en un dispositivo.</p>
+                    <p>Descripción: Celular TCL 30SE 256GB Atlantic Blue.</p>
                 </div>
-            </div>
 
-            <div class="producto">
-                <img src="images/30SE.jpg" alt="TCL 30SE">
-                <h4>TCL 30 Pro</h4>
-                <p>Precio: $349.560</p>
-                <p>Descripción: Celular TCL 30SE 256GB Atlantic Blue.</p>
-            </div>
-
-            <div class="producto">
-                <img src="images/40SE.png" alt="TCL 40SE">
-                <h4>TCL 30 Pro</h4>
-                <p>Precio: $349.560</p>
-                <p>Descripción: El TCL 40 SE es un smartphone Android con una pantalla HD+ de 6.75 pulgadas y tasa de refresco de 90Hz y potenciado por un chip Helio G37 con 4GB o 6GB de RAM.</p>
-            </div>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+                <div class="producto">
+                    <img src="images/40SE.png" alt="TCL 40SE">
+                    <h4>TCL 30 Pro</h4>
+                    <p>Precio: $349.560</p>
+                    <p>Descripción: El TCL 40 SE es un smartphone Android con una pantalla HD+ de 6.75 pulgadas y tasa
+                        de refresco de 90Hz y potenciado por un chip Helio G37 con 4GB o 6GB de RAM.</p>
+                </div>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
 </body>
+
 </html>
 
-    <script src="scripts.js"></script>
+<script src="scripts.js"></script>
 </body>
+
 </html>

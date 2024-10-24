@@ -96,3 +96,62 @@ button:hover {
     color: green;
     font-size: 30px;
 }
+
+
+/************************************************** ESPACIO MENU **************************************************/
+/* .menuDesplegable {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #000000;
+    min-width: 80px;
+    z-index: 0;
+    font-size: 17px;
+    transition: opacity 0.3s ease visibility 0.3s ease;
+    border: 0px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/*para que al pasar el mouse se despliegue el menu y muestre las opciones*/
+/* .barraNavegacion:hover .menuDesplegable {
+    visibility: visible;
+    opacity: 1;
+    animation: slideDown 0.3s ease forwards;
+} */
+
+/*estilo para los elementos del menú desplegable*/
+/* .menuDesplegable a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 22px;
+    
+}
+
+.menuDesplegable a:hover {
+    background-color: rgba(7, 187, 187, 0.582);
+} */
+
+/************************************************* BARRA DE NAVEGACION **************************************************/
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: -15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
