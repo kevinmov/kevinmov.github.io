@@ -169,7 +169,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    color: rgba(214, 212, 101, 0.856);
+    color: rgb(255, 251, 0);
     font-size: 30px;
 }
 
